@@ -1,0 +1,251 @@
+/* Navbar styles */
+.navbar {
+  background-color: #10174f;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Untitled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* BMR calculator */
+.bmr-calculator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 680px;
+  margin-left: -285px;
+  margin-top: -275px;
+  background-color: white;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+}
+
+/* BMR calculator */
+.bmr1-calculator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 680px;
+  margin-left: -285px;
+  margin-top: -275px;
+  background-color: white;
+  padding: 8px 24px;
+  box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif;
+}
+
+.bmr1-calculator h2,
+.bmr-calculator h2 {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  font-weight: 100;
+  margin: -8px -24px;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+
+.bmr1-calculator form,
+.bmr-calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Increase the gap between form elements for better spacing */
+}
+
+.bmr1-calculator form h3,
+.bmr-calculator form h3 {
+  font-size: 15px;
+  margin: 16px 0 10px 0;
+  font-style: italic;
+
+}
+
+.bmr1-calculator form input[type="text"],
+.bmr-calculator form input[type="text"] {
+  width: 100%;
+  padding: 4px 16px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #d5dbdd;
+}
+
+.bmr1-calculator form input[type="text"].invalid,
+.bmr-calculator form input[type="text"].invalid {
+  border: 1px solid red;
+}
+
+.bmr1-calculator form .unit,
+.bmr-calculator form .unit {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  color: #777;
+}
+.bmr1-calculator .maryamresult,
+.bmr-calculator .result {
+  text-align: center;
+  color: #4e4e4e;
+  font-size: 18px;
+}
+
+.bmr-calculator .result .calculate-btn {
+  padding: 8px 24px;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+.bmr1-calculator .maryamresult .maryamcalculate-btn {
+  padding: 8px 24px;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+.bmr-calculator .result .calories {
+  color: green;
+  font-size: 38px;
+  font-weight: 900;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.bmr1-calculator .maryamresult .maryamcalories {
+  color: green;
+  font-size: 38px;
+  font-weight: 900;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.bmr-calculator .result .error-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+.bmr1-calculator .maryamresult .maryamerror-message {
+  color: red;
+  font-size: 14px;
+  display: none;
+}
+
+.bmr-calculator .result .error-message.active {
+  display: block;
+}
+
+.bmr1-calculator .maryamresult .maryamerror-message.active {
+  display: block;
+}
+/* Input positioning */
+.bmr-calculator form .weight,
+.bmr-calculator form .weight1,
+.bmr-calculator form .weight3,
+.bmr-calculator form .weight2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left:  5px;
+  margin-right: 10px;
+   /* Adjust the left margin to align the elements properly */
+}
+
+/* Input positioning */
+.bmr-calculator form .weight,
+.bmr-calculator form .weight1,
+.bmr-calculator form .weight3,
+.bmr-calculator form .weight2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left:  5px;
+  margin-right: 10px;
+   /* Adjust the left margin to align the elements properly */
+}
+
+.bmr1-calculator form .maryamweight,
+.bmr1-calculator form .maryamweight1,
+.bmr1-calculator form .maryamweight2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-left:  5px;
+  margin-right: 10px;
+   /* Adjust the left margin to align the elements properly */
+}
+
+
+.bmr-calculator form .weight div {
+  /* Remove display: inline-block; */
+}
+
+/* Additional Styles */
+.bmr-calculator .controls {
+  flex-grow: 1; /* Expand the controls section to fill the available space */
+}
+
+.bmr-calculator .result {
+  flex-shrink: 0; /* Prevent the result section from shrinking */
+}
+
+
+
+

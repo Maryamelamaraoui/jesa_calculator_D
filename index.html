@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="https://www.dreamjob.ma/wp-content/uploads/2021/02/JESA-OCP-Emploi-Recrutement-2.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url("Untitled.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#">
+          <img src="maryam.png" alt="Logo">
+        </a>
+        
+        <ul class="nav-links">
+          <li><a href="https://maryamelamaraoui.github.io/jesa_calculator_D/">Diameter Calculator</a></li>
+          <li><a href="https://maryamelamaraoui.github.io/jesa_calculator_T/">Thickness Calculator</a></li>
+          <li><a href="https://www.jesagroup.com/news">News</a></li>
+          <li><a href="https://www.jesagroup.com/about.html">About us</a></li>
+          <li><a href="https://www.jesagroup.com/expertise.html">Expertise</a></li>
+          <li><a href="https://www.jesagroup.com/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="bmr-calculator">
+      <h2>Restriction Orifice Diameter Calculator</h2>
+      <div class="controls">
+        <form>
+
+          <div class="gender">
+            <h3>Type de fluide</h3>
+            <input type="radio" id="male" value="male" name="gender"  />
+            <label for="male">Gaz</label>
+            <input type="radio" id="female" value="female" name="gender" />
+            <label for="female">Liquide</label>
+          </div>
+            <!-- Additional checkboxes -->
+            <div id="additionalCheckboxes" style="display: none">
+              <div>
+                <input type="checkbox" id="checkbox1" name="checkbox1" />
+                <label for="checkbox1">écoulement critique</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkbox2" name="checkbox2" />
+                <label for="checkbox2">écoulement non critique</label>
+              </div>
+            </div>
+          <div class="weight">
+            <div>
+              <h3>A (m²)</h3>
+              <input type="text" id="weight" value="00" />
+              <div class="unit">m</div>
+            </div>
+            <div>
+              <h3>Coefficient de contraction</h3>
+              <input type="text" id="height" value="00" />
+              <div class="unit">m</div>
+            </div>
+            
+          </div>
+
+          <div class="weight1">
+            <div>
+              <h3>Pression en amont (KPa)</h3>
+              <input type="text" id="p1" value="00" />
+              <div class="unit">m</div>
+            </div>
+            <div>
+              <h3>ρ (kg/m³)</h3>
+              <input type="text" id="Aeau" value="00" />
+              <div class="unit">m</div>
+            </div>
+          </div>
+
+          <div class="weight2">
+            <div>
+              <h3>Pression en aval (KPa)</h3>
+              <input type="text" id="P4" value="00" />
+              <div class="unit">m</div>
+            </div>
+            <div>
+              <h3>C1</h3>
+              <input type="text" id="cun" value="00" />
+              <div class="unit">m</div>
+            </div>
+          </div>
+
+          <div class="weight3">
+            <div>
+              <h3>R4</h3>
+              <input type="text" id="r4" value="00" />
+              <div class="unit">m</div>
+            </div>
+            <div>
+              <h3>K</h3>
+              <input type="text" id="k" value="00" />
+              <div class="unit">m</div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    
+      <div class="result">
+        <button class="calculate-btn">Calculate</button>
+
+        <div class="result-message">
+          <span class="calories">0,000</span> Millimetres
+        </div>
+
+        <div class="error-message">
+          <p>Please enter all the details correctly.</p>
+        </div>
+      </div>
+    </div>
+
+   
+    
+    <script src="main.js"></script>
+  </body>
+</html>
